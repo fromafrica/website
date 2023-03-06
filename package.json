@@ -1,6 +1,6 @@
 {
-	"name": "fawl-web-new",
-	"version": "0.0.1",
+	"name": "fawl-org",
+	"version": "0.1.0",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
