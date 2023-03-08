@@ -15,11 +15,12 @@
         }
         .item {
           color: white;
+          background: #f9f9f9;
           padding: 0px;
           border-radius: 4px;
         }
         .item:nth-child(even) {
-          /* background: #ececec; */
+          background: #ececec;
         }
         .hero {
           grid-column: span 2;
@@ -46,11 +47,12 @@
         }
         .item {
           color: white;
+          background: #f9f9f9;
           padding: 0px;
           border-radius: 4px;
         }
         .item:nth-child(even) {
-          /* background: #ececec; */
+          background: #ececec;
         }
         .hero {
           grid-column: span 2;
@@ -77,12 +79,13 @@
         }
         .item {
           color: white;
+          background: #f9f9f9;
           padding: 0px;
           text-align: center;
           border-radius: 4px;
         }
         .item:nth-child(even) {
-          /* background: #ececec; */
+          background: #ececec;
         }
         .item:hover {
           cursor: pointer;
@@ -103,12 +106,19 @@
 </style>
 
 <div class="wrapper">
-    <div class="item"><img src="card-fa.svg" alt="" style="height: 90%; margin: auto; text-align: center; object-fit: cover; overflow: hidden; pointer-events: none; border-radius: 4px;"></div>
-    <div class="item"><img src="card-re.svg" alt="" style="height: 100%; margin: auto; object-fit: cover; overflow: hidden; pointer-events: none; border-radius: 4px;"></div>
-    <div class="item vert"><img src="card-fd.svg" alt="" style="height: 90%; margin: auto; object-fit: cover; overflow: hidden; pointer-events: none; border-radius: 4px;"></div>
-    <div class="item"><img src="card-hr.svg" alt="" style="height: 100%; margin: auto; object-fit: cover; overflow: hidden; pointer-events: none; border-radius: 4px;"></div>
-    <div class="item"><img src="card-ko.svg" alt="" style="height: 100%; margin: auto; object-fit: cover; overflow: hidden; pointer-events: none; border-radius: 4px;"></div>
-    <div class="item"><img src="card-ln.svg" alt="" style="height: 100%; margin: auto; object-fit: cover; overflow: hidden; pointer-events: none; border-radius: 4px;"></div>
-    <!-- <div class="item hero bg-stone-900"><img src="love.jpeg" alt="" style="height: 100%; margin: auto; object-fit: cover; overflow: hidden; pointer-events: none; border-radius: 4px;"></div> -->
-    <div class="item"><img src="card-re.svg" alt="" style="height: 100%; margin: auto; object-fit: cover; overflow: hidden; pointer-events: none; border-radius: 4px;"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item vert"></div>
+    <div class="item"></div>
+    <div class="item hero"></div>
+    <div class="item"></div>
+    <div class="item vert"></div>
+    <div class="item"></div>
+    <div class="item hero"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item vert"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
 </div>
