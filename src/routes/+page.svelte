@@ -1,5 +1,5 @@
-<script lang="ts">
-	import Block from "../Block.svelte";
+<script>
+	import Block from "$lib/Block.svelte";
 </script>
 
 <style>
