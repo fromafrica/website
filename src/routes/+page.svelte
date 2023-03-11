@@ -1,5 +1,6 @@
-<script>
-	import Block from '$components/Block.svelte';
+<script lang="ts">
+
+	import Block from '../lib/Block.svelte';
 </script>
 
 <style>
