@@ -83,7 +83,7 @@
 		text-align: right;
 		color: #fdfdfd;
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 		height: 1.5rem;
 		padding-bottom: 15px;
 		padding-right: 10px;
