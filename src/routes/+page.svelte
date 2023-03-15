@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { fly } from 'svelte/transition';
+  import { slide } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 	import MenuIcon from '$lib/MenuIcon.svelte';
 
   let visible = false;
@@ -12,7 +13,8 @@
 <style>
 .drawerMenu {
   position: absolute;
-    top: 0;
+    top: 64;
+    left: 0;
     width: 100%;
     height: 100%;
     color: #fff;
@@ -29,8 +31,7 @@
   </div>
   <div class="flex-none">
     <!-- hides above sm breakpoint -->
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <div class="inline md:hidden h-full z-50" on:click={toggle}>
+    <div class="inline md:hidden h-full z-50" on:click={toggle} on:keypress={toggle}>
       <MenuIcon />
     </div>
 
@@ -53,7 +54,7 @@
 </div>
 
 {#if visible}
-<div class="drawerMenu bg-zinc-400" in:fly="{{ x: 400, duration: 250 }}" out:fly="{{ x: 800, duration: 250 }}">
+<div class="drawerMenu bg-black " transition:slide="{{delay: 150, duration: 450, easing: quintOut}}">
 test
 </div>
 {/if}
