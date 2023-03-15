@@ -15,7 +15,6 @@
     top: 0;
     width: 100%;
     height: 100%;
-    display: grid;
     color: #fff;
     z-index: 4;
 }
@@ -54,7 +53,7 @@
 </div>
 
 {#if visible}
-<div class="drawer drawerMenu bg-zinc-400" in:fly="{{ x: 400, duration: 250 }}" out:fly="{{ x: 800, duration: 250 }}">
+<div class="drawerMenu bg-zinc-400" in:fly="{{ x: 400, duration: 250 }}" out:fly="{{ x: 800, duration: 250 }}">
 test
 </div>
 {/if}
