@@ -13,16 +13,18 @@
 <style>
 .drawerMenu {
   position: absolute;
-    top: 64;
+    top: 0;
     left: 0;
     width: 100%;
+    padding: 0;
+    margin: 0;
     height: 100%;
     color: #fff;
     z-index: 4;
 }
 </style>
 
-<div class="navbar w-full bg-white p-2">
+<div class="navbar w-full bg-slate-400 p-2">
   <div class="flex-1">
     <div class="leading-[48px] float-left">
       <img alt="" src="favicon-128.png" class="md:w-6 md:mr-2 inline w-8 mx-2" />
@@ -54,7 +56,7 @@
 </div>
 
 {#if visible}
-<div class="drawerMenu bg-black " transition:slide="{{delay: 150, duration: 450, easing: quintOut}}">
+<div class="drawerMenu bg-slate-500 " transition:slide="{{delay: 150, duration: 450, easing: quintOut}}">
 test
 </div>
 {/if}
