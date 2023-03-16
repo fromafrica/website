@@ -15,8 +15,8 @@
   position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 105vw;
+    height: 105vh;
     padding: 0;
     margin: 0;
     height: 100%;
