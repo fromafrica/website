@@ -15,12 +15,14 @@
   position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     padding: 0;
     margin: 0;
     height: 100%;
     color: #fff;
     z-index: 4;
+    overflow: hidden;
 }
 </style>
 
