@@ -9,30 +9,10 @@
 </script>
 
 <style>
-:root {
- --doc-height: 100%;
- --doc-width: 100%;
-}
-
-html, body {
-  padding: 0;
-  margin: 0;
-  width: 100vw;
-  width: var(--doc-width);
-  height: 100vh; /* fallback for Js load */
-  height: var(--doc-height);
-}
-
 .drawerMenu {
   position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    width: var(--doc-width);
-    height: 100vh;
-    height: var(--doc-height);
-    padding: 0;
-    margin: 0 auto;
     color: #fff;
     z-index: 4;
     overflow: hidden;
@@ -82,7 +62,7 @@ html, body {
 </div>
 
 {#if $visible}
-<div class="drawerMenu bg-slate-500 " transition:slide="{{delay: 150, duration: 450, easing: quintOut}}">
+<div class="drawerMenu bg-slate-500 h-screen w-screen" transition:slide="{{delay: 150, duration: 450, easing: quintOut}}">
 test
 </div>
 {/if}
