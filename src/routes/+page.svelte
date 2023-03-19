@@ -24,14 +24,14 @@
 }
 </style>
 
-<div class="navbar w-full bg-slate-400 p-2">
+<div class="navbar w-full bg-slate-400">
   <div class="flex-1">
     <div class="leading-[48px] float-left">
       <img alt="" src="favicon-128.png" class="md:w-6 md:mr-2 inline w-8 mx-2" />
       <img alt="" src="logo-b.svg" class="hidden md:inline md:w-44" />
     </div>
   </div>
-  <div class="flex-none">
+  <div class="flex-none justify-end">
     <!-- hides above sm breakpoint -->
     <div class="inline md:hidden h-full z-50" on:click={() => $visible = !$visible } on:keypress={() => $visible = !$visible }>
       <MenuIcon />
