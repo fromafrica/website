@@ -1,13 +1,11 @@
 <script lang="ts">
+  import { writable } from 'svelte/store';
   import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import MenuIcon from '$lib/MenuIcon.svelte';
 
-  let visible = false;
-
-  function toggle() {
-    visible = !visible;
-  }
+  // Create a store and update it when necessary...
+  let visible = writable(false);
 </script>
 
 <style>
@@ -15,10 +13,10 @@
   position: absolute;
     top: 0;
     left: 0;
-    width: 105vw;
-    height: 105vh;
+    width: 100vw;
+    height: 100vh;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     height: 100%;
     color: #fff;
     z-index: 4;
@@ -35,30 +33,42 @@
   </div>
   <div class="flex-none">
     <!-- hides above sm breakpoint -->
-    <div class="inline md:hidden h-full z-50" on:click={toggle} on:keypress={toggle}>
+    <div class="inline md:hidden h-full z-50" on:click={() => $visible = !$visible } on:keypress={() => $visible = !$visible }>
       <MenuIcon />
     </div>
 
     <!-- md breakpoint and up-->
     <ul class="hidden md:flex menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
       <li>
-        <a>
-          Parent
+        <a href="/">
+          Bots
           <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
         </a>
         <ul class="p-1 shadow-sm bg-zinc-50 border-slate-100">
-          <li class="bg-white"><a>Submenu 1</a></li>
-          <li class="bg-white"><a>Submenu 2</a></li>
+          <li class="bg-white"><a href="/andromida">Andromida</a></li>
+          <li class="bg-white"><a href="/koco">Koco</a></li>
         </ul>
       </li>
-      <li><a>Item 3</a></li>
+      <li>
+        <a href="/">
+          Apps
+          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+        </a>
+        <ul class="p-1 shadow-sm bg-zinc-50 border-slate-100">
+          <li class="bg-white"><a href="/loonieapp">loonie.app</a></li>
+          <li class="bg-white"><a href="/fawldev">fawl.dev</a></li>
+        </ul>
+      </li>
+      <li><a href="/tools">Tools</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/donate">Donate</a></li>
     </ul>
   </div>
 </div>
 
-{#if visible}
+{#if $visible}
 <div class="drawerMenu bg-slate-500 " transition:slide="{{delay: 150, duration: 450, easing: quintOut}}">
 test
 </div>
 {/if}
+
