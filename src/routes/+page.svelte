@@ -8,16 +8,20 @@
   let visible = writable(false);
 </script>
 
-<style>
-.drawerMenu {
-  position: absolute;
-    top: 0;
-    left: 0;
-    color: #fff;
-    z-index: 4;
-    overflow: hidden;
-}
-</style>
+  <style>
+    #svelte-announcer {
+      display: none;
+    }
+
+    .drawerMenu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fff;
+      z-index: 4;
+      overflow: hidden;
+    }
+  </style>
 
 <div class="navbar w-full bg-gray-800 ">
   <div class="flex-1">
