@@ -38,19 +38,10 @@
 
     <!-- md breakpoint and up-->
     <ul class="hidden md:flex text-gray-100 menu menu-horizontal px-1">
+      <li><a href="/andromida">Andromida</a></li>
       <li>
         <a href="/">
-          Bots
-          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-        </a>
-        <ul class="p-1 shadow-sm bg-slate-700 border-slate-100">
-          <li class="bg-slate-600"><a href="/andromida">Andromida</a></li>
-          <li class="bg-slate-600"><a href="/koco">Koco</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="/">
-          Apps
+          Projects
           <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
         </a>
         <ul class="p-1 shadow-sm bg-slate-700 border-slate-100">
@@ -58,9 +49,7 @@
           <li class="bg-slate-600"><a href="/fawldev">fawl.dev</a></li>
         </ul>
       </li>
-      <li><a href="/tools">Tools</a></li>
       <li><a href="/blog">Blog</a></li>
-      <li><a href="/donate">Donate</a></li>
     </ul>
   </div>
 </div>
