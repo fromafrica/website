@@ -19,11 +19,11 @@
 }
 </style>
 
-<div class="navbar w-full bg-slate-400">
+<div class="navbar w-full bg-gray-800 ">
   <div class="flex-1">
     <div class="leading-[48px] float-left">
-      <img alt="" src="favicon-128.png" class="md:w-6 md:mr-2 inline w-8 mx-2" />
-      <img alt="" src="logo-b.svg" class="hidden md:inline md:w-44" />
+      <img alt="" src="favicon-128.png" class="md:w-8 md:mr-3 inline w-8 ml-2" />
+      <img alt="" src="logo-o.svg" class="hidden md:inline md:w-40 " />
     </div>
   </div>
   <div class="flex-none justify-end">
@@ -33,15 +33,15 @@
     </div>
 
     <!-- md breakpoint and up-->
-    <ul class="hidden md:flex menu menu-horizontal px-1">
+    <ul class="hidden md:flex text-gray-100 menu menu-horizontal px-1">
       <li>
         <a href="/">
           Bots
           <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
         </a>
-        <ul class="p-1 shadow-sm bg-zinc-50 border-slate-100">
-          <li class="bg-white"><a href="/andromida">Andromida</a></li>
-          <li class="bg-white"><a href="/koco">Koco</a></li>
+        <ul class="p-1 shadow-sm bg-slate-700 border-slate-100">
+          <li class="bg-slate-600"><a href="/andromida">Andromida</a></li>
+          <li class="bg-slate-600"><a href="/koco">Koco</a></li>
         </ul>
       </li>
       <li>
@@ -49,9 +49,9 @@
           Apps
           <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
         </a>
-        <ul class="p-1 shadow-sm bg-zinc-50 border-slate-100">
-          <li class="bg-white"><a href="/loonieapp">loonie.app</a></li>
-          <li class="bg-white"><a href="/fawldev">fawl.dev</a></li>
+        <ul class="p-1 shadow-sm bg-slate-700 border-slate-100">
+          <li class="bg-slate-600"><a href="/loonieapp">loonie.app</a></li>
+          <li class="bg-slate-600"><a href="/fawldev">fawl.dev</a></li>
         </ul>
       </li>
       <li><a href="/tools">Tools</a></li>
@@ -62,7 +62,7 @@
 </div>
 
 {#if $visible}
-<div class="drawerMenu bg-slate-500 h-screen w-screen" transition:slide="{{delay: 150, duration: 450, easing: quintOut}}">
+<div class="drawerMenu bg-gray-800 h-screen w-screen" transition:slide="{{delay: 150, duration: 450, easing: quintOut}}">
 test
 </div>
 {/if}

@@ -22,7 +22,7 @@
 .line {
   fill:none;
   transition: stroke-dasharray 250ms, stroke-dashoffset 250ms;
-  stroke:#000;
+  stroke:#ff8800;
   stroke-width:5.5;
   stroke-linecap:round;
 }
