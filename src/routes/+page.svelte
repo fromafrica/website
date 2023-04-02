@@ -26,7 +26,6 @@
   <div class="flex-1">
     <div class="leading-[48px] float-left z-50">
       <img alt="" src="favicon-128.png" class="md:w-8 md:mr-3 inline w-8 ml-2" />
-      <img alt="" src="logo-o.svg" class="hidden md:inline w-40" />
     </div>
   </div>
   <div class="flex-none justify-end">
