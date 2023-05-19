@@ -6,6 +6,43 @@
 	 export let colour: string | null;
 </script>
 
+{#if type === 'small'}
+	<div class="item" style="background: {colour}">
+		<a href="https://{footer}">
+		{#if tag && name && footer}
+			<div class="tag">{tag}</div>
+			<div class="name" style="font-size: 38px;">{name}</div>
+			<div class="footer"><a href="https://{footer}">{footer}</a></div>
+		{/if}
+		</a>
+	</div>
+{/if}
+
+{#if type === 'vertical'}
+	<div class="item vert" style="background: {colour}">
+		<a href="https://{footer}">
+		{#if tag && name && footer}
+			<div class="tag">{tag}</div>
+			<div class="name" style="font-size: 52px;">{name}</div>
+			<div class="footer"><a href="https://{footer}">{footer}</a></div>
+		{/if}
+		</a>
+	</div>
+{/if}
+
+{#if type === 'hero'}
+		<div class="item hero" style="background: {colour}">
+			<a href="https://{footer}">
+			{#if tag && name && footer}
+				<div class="tag">{tag}</div>
+				<div class="name" style="font-size: 96px;">{name}</div>
+				<div class="footer">{footer}</div>
+			{/if}
+			</a>
+		</div>
+{/if}
+
+
 <style>
 	@media only screen and (max-width: 480px) {
 		.item {
@@ -17,6 +54,9 @@
 		}
 		.item:nth-child(even) {
 			background: #ececec;
+		}
+		.item:hover {
+			cursor: pointer;
 		}
 		.hero {
 			grid-column: span 2;
@@ -37,6 +77,9 @@
 		}
 		.item:nth-child(even) {
 			background: #ececec;
+		}
+		.item:hover {
+			cursor: pointer;
 		}
 		.hero {
 			grid-column: span 2;
@@ -62,18 +105,6 @@
 		}
 		.item:hover {
 			cursor: pointer;
-			scale: 0.99;
-  			transition-duration: 0.2s;
-		}
-		.item:hover .tag {
-			padding-top: 8px;
-			padding-left: 11px;
-  			transition-duration: 0.3s;
-		}
-		.item:hover .footer {
-			padding-bottom: 24px;
-			padding-right: 13px;
-  			transition-duration: 0.3s;
 		}
 		.hero {
 			grid-column: span 2;
@@ -122,34 +153,3 @@
 		opacity: 0.90;
 	}
 </style>
-
-
-{#if type === 'small'}
-	<div class="item" style="background: {colour}">
-		{#if tag && name && footer}
-			<div class="tag">{tag}</div>
-			<div class="name" style="font-size: 38px;">{name}</div>
-			<div class="footer"><a href="https://{footer}">{footer}</a></div>
-		{/if}
-	</div>
-{/if}
-
-{#if type === 'vertical'}
-	<div class="item vert" style="background: {colour}">
-		{#if tag && name && footer}
-			<div class="tag">{tag}</div>
-			<div class="name" style="font-size: 52px;">{name}</div>
-			<div class="footer"><a href="https://{footer}">{footer}</a></div>
-		{/if}
-	</div>
-{/if}
-
-{#if type === 'hero'}
-	<div class="item hero" style="background: {colour}">
-		{#if tag && name && footer}
-			<div class="tag">{tag}</div>
-			<div class="name" style="font-size: 96px;">{name}</div>
-			<div class="footer"><a href="https://{footer}">{footer}</a></div>
-		{/if}
-	</div>
-{/if}

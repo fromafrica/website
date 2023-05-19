@@ -39,12 +39,8 @@
 </style>
 
 <div class="wrapper">
-    <Blox type="small" tag="117" name="Ak" footer="aksum.dev" colour="#bfa762" />
-    <Blox type="vertical" tag="205" name="Fd" footer="fawl.dev" colour="#d1864b" />
-    <Blox type="small" tag="209" name="Ko" footer="koco.dev" colour="#00a76d" />
-    <Blox type="hero" tag="201" name="Fa" footer="fawl.app" colour="#e93a62" />
-    <Blox type="small" tag="203" name="Ln" footer="loonie.app" colour="#fd4c55" />
-    <Blox type="vertical" tag="105" name="Re" footer="rex.rs" colour="#fbae39" />
-    <Blox type="small" tag="216" name="Lh" footer="linkha.sh" colour="#7d52ea" />
-    <Blox type="small" tag="101" name="Hr" footer="harar.io" colour="#3986FB" />
+  <Blox type="vertical" tag="105" name="Re" footer="rex.rs" colour="#fbae39" />
+  <Blox type="small" tag="216" name="Lh" footer="linkha.sh" colour="#7d52ea" />
+  <Blox type="hero" tag="201" name="Ch" footer="chinook.app" colour="#3880a1" />
+  <Blox type="small" tag="203" name="Ln" footer="loonie.app" colour="#fd4c55" />
 </div>
