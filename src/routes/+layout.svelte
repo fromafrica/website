@@ -6,6 +6,6 @@
 
 </style>
 
-<div class="w-full mx-auto m-2">
+<div class="w-full mx-auto">
     <slot/>
 </div>

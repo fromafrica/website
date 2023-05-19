@@ -1,5 +1,4 @@
 <script lang="ts">
-	 export let type: string | null;
 	 export let tag: string | null;
 	 export let name: string | null;
 	 export let footer: string | null;
@@ -50,6 +49,8 @@
 			color: white;
 			background: #f9f9f9;
 			padding: 0px;
+			opacity: 0.9;
+			text-align: center;
 			border-radius: 1px;
 		}
 		.item:nth-child(even) {
@@ -73,6 +74,8 @@
 			color: white;
 			background: #f9f9f9;
 			padding: 0px;
+			opacity: 0.9;
+			text-align: center;
 			border-radius: 1px;
 		}
 		.item:nth-child(even) {
@@ -95,7 +98,7 @@
 			position: relative;
 			color: white;
 			padding: 0px;
-			scale: 1.0;
+			opacity: 0.9;
 			text-align: center;
 			border-radius: 1px;
   			transition-duration: 0.2s;
@@ -116,7 +119,17 @@
 		}
 	}
 
-	.tag {
+	.item:nth-child(even) {
+		background: #ececec;
+	}
+
+	.item:hover {
+		cursor: pointer;
+		opacity: 1.0;
+		transition-duration: 0.2s;
+	}
+
+	.item .tag {
 		display: block;
 		width: 100%;
 		text-align: left;
@@ -129,15 +142,16 @@
 		opacity: 0.75;
 	}
 
-	.name {
+	.item .name {
 		display: flex;
 		height: calc(100% - 3rem);
 		font-family: 'Teko', sans-serif;
 		align-items: center;
 		justify-content: center;
+		text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
 	}
 
-	.footer {
+	.item .footer {
 		display: block;
 		position: absolute;
 		bottom: 0;
@@ -146,7 +160,7 @@
 		text-align: right;
 		color: #fdfdfd;
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 		height: 1.5rem;
 		padding-bottom: 15px;
 		padding-right: 10px;
