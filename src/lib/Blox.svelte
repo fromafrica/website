@@ -5,6 +5,43 @@
 	 export let colour: string | null;
 </script>
 
+{#if type === 'small'}
+	<div class="item" style="background: {colour}">
+		<a href="https://{footer}">
+		{#if tag && name && footer}
+			<div class="tag">{tag}</div>
+			<div class="name" style="font-size: 38px;">{name}</div>
+			<div class="footer"><a href="https://{footer}">{footer}</a></div>
+		{/if}
+		</a>
+	</div>
+{/if}
+
+{#if type === 'vertical'}
+	<div class="item vert" style="background: {colour}">
+		<a href="https://{footer}">
+		{#if tag && name && footer}
+			<div class="tag">{tag}</div>
+			<div class="name" style="font-size: 52px;">{name}</div>
+			<div class="footer"><a href="https://{footer}">{footer}</a></div>
+		{/if}
+		</a>
+	</div>
+{/if}
+
+{#if type === 'hero'}
+		<div class="item hero" style="background: {colour}">
+			<a href="https://{footer}">
+			{#if tag && name && footer}
+				<div class="tag">{tag}</div>
+				<div class="name" style="font-size: 96px;">{name}</div>
+				<div class="footer">{footer}</div>
+			{/if}
+			</a>
+		</div>
+{/if}
+
+
 <style>
 	@media only screen and (max-width: 480px) {
 		.item {
@@ -15,7 +52,20 @@
 			opacity: 0.9;
 			text-align: center;
 			border-radius: 1px;
-  			transition-duration: 0.2s;
+		}
+		.item:nth-child(even) {
+			background: #ececec;
+		}
+		.item:hover {
+			cursor: pointer;
+		}
+		.hero {
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+		.vert {
+			grid-column: span 1;
+			grid-row: span 2;
 		}
 	}
 	@media only screen and (min-width: 481px) {
@@ -27,7 +77,20 @@
 			opacity: 0.9;
 			text-align: center;
 			border-radius: 1px;
-  			transition-duration: 0.2s;
+		}
+		.item:nth-child(even) {
+			background: #ececec;
+		}
+		.item:hover {
+			cursor: pointer;
+		}
+		.hero {
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+		.vert {
+			grid-column: span 1;
+			grid-row: span 2;
 		}
 	}
 	@media only screen and (min-width: 630px) {
@@ -39,6 +102,20 @@
 			text-align: center;
 			border-radius: 1px;
   			transition-duration: 0.2s;
+		}
+		.item .name {
+			text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+		}
+		.item:hover {
+			cursor: pointer;
+		}
+		.hero {
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+		.vert {
+			grid-column: span 1;
+			grid-row: span 2;
 		}
 	}
 
@@ -90,11 +167,3 @@
 		opacity: 0.90;
 	}
 </style>
-
-<div class="item" style="background: {colour}">
-	{#if tag && name && footer}
-		<div class="tag">{tag}</div>
-		<div class="name" style="font-size: 38px;">{name}</div>
-		<div class="footer"><a href="https://{footer}">{footer}</a></div>
-	{/if}
-</div>

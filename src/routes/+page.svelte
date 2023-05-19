@@ -64,3 +64,9 @@
 </div>
 {/if}
 
+<div class="wrapper">
+  <Blox type="vertical" tag="105" name="Re" footer="rex.rs" colour="#fbae39" />
+  <Blox type="small" tag="216" name="Lh" footer="linkha.sh" colour="#7d52ea" />
+  <Blox type="hero" tag="201" name="Ch" footer="chinook.app" colour="#3880a1" />
+  <Blox type="small" tag="203" name="Ln" footer="loonie.app" colour="#fd4c55" />
+</div>
