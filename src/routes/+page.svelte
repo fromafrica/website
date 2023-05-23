@@ -27,7 +27,7 @@
     text-align: center;
     margin: 0 auto;
     width: 98%;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .header img {
