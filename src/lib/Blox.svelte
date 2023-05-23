@@ -126,7 +126,7 @@
 		height: 1.5rem;
 		padding-top: 5px;
 		padding-left: 8px;
-		opacity: 0.75;
+		opacity: 0.80;
 	}
 
 	.name {
