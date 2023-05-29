@@ -15,7 +15,7 @@
   <Blox type="vertical" tag="105" name="Re" footer="rex.rs" colour="#F78200" />
   <Blox type="small" tag="117" name="Gi" footer="gild.sh" colour="#5EBD3E" />
   <Blox type="hero" tag="201" name="Ch" footer="chinook.app" colour="#009CDF" />
-  <Blox type="vertical" tag="201" name="Ko" footer="koco.app" colour="#EF517F" />
+  <Blox type="small" tag="201" name="Ko" footer="koco.app" colour="#EF517F" />
 </div>
 
 
