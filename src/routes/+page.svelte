@@ -6,19 +6,16 @@
 <div class="header">
   <img src={logo} alt='from africa with love logo' width='80px' />
   <br/>
-  building open source infrastructure
+  infrastructure for building communities
   <br/><br/>
   <p><a href="https://explain.fromafri.ca">read <strong>our plans</strong></a>, or explore the periodic table of projects:</p>
   <br/>
 </div>
 <div class="wrapper">
   <Blox type="vertical" tag="105" name="Re" footer="rex.rs" colour="#F78200" />
-  <Blox type="small" tag="216" name="Lh" footer="linkha.sh" colour="#FFB900" />
   <Blox type="small" tag="117" name="Gi" footer="gild.sh" colour="#5EBD3E" />
   <Blox type="hero" tag="201" name="Ch" footer="chinook.app" colour="#009CDF" />
   <Blox type="vertical" tag="201" name="Ko" footer="koco.app" colour="#EF517F" />
-  <Blox type="small" tag="203" name="Wd" footer="woreda.design" colour="#973999" />
-  <Blox type="small" tag="203" name="Ln" footer="loonie.app" colour="#E23838" />
 </div>
 
 
